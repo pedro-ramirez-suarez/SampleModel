@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\Entity\Address.cs" />
+    <Compile Include="Model\Entity\City.cs" />
     <Compile Include="Model\Entity\Department.cs" />
     <Compile Include="Model\Entity\Project.cs" />
     <Compile Include="Model\Entity\WorkerEquipment.cs" />

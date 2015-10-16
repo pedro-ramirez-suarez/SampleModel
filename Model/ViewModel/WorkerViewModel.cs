@@ -16,10 +16,11 @@ namespace Needletail.SampleModel.Model.ViewModel
         [HasOne("UserAddress","AddressId","Address","Id")]
         [SelectFrom("DepartmentList","DepartmentId", "Department", "Id", "DepartmentName")]
         [Autocomplete("CityId","City","Id","CityName","CityName","CityName")]
-        [HasMany("EquipmentList","Id","UserEquipment","UserId")]
-        [HasManyNtoN("ProjectList","Id","UserProject","UserId","ProjectId","Project","Id")]
+        [HasMany("EquipmentList","Id","WorkerEquipment","UserId")]
+        [HasManyNtoN("ProjectList","Id","WorkerProject","UserId","ProjectId","Project","Id")]
         public Worker Worker { get; set; }
 
+        public Address UserAddress { get; set; }
 
         public Address WorkerAddress { get; set; }
 
