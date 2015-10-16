@@ -30,21 +30,23 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DataAccess.Scaffold">
-      <HintPath>packages\Needletail.DataAccess.1.1\lib\net451\DataAccess.Scaffold.dll</HintPath>
+    <Reference Include="DataAccess.Scaffold, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Needletail.DataAccess.1.1.2\lib\net451\DataAccess.Scaffold.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.SqlServer.Types, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Needletail.DataAccess.1.1.2\lib\net451\Microsoft.SqlServer.Types.dll</HintPath>
       <Private>True</Private>
-      <HintPath>packages\Needletail.DataAccess.1.1\lib\net451\Microsoft.SqlServer.Types.dll</HintPath>
     </Reference>
-    <Reference Include="Needletail.DataAccess">
-      <HintPath>packages\Needletail.DataAccess.1.1\lib\net451\Needletail.DataAccess.dll</HintPath>
+    <Reference Include="Needletail.DataAccess, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Needletail.DataAccess.1.1.2\lib\net451\Needletail.DataAccess.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions">
+      <HintPath>..\packages\Needletail.DataAccess.1.1.2\lib\net451\System.Data.DataSetExtensions.dll</HintPath>
       <Private>True</Private>
-      <HintPath>packages\Needletail.DataAccess.1.1\lib\net451\System.Data.DataSetExtensions.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Microsoft.CSharp" />
@@ -55,16 +57,14 @@
     <Compile Include="Model\Entity\Address.cs" />
     <Compile Include="Model\Entity\Department.cs" />
     <Compile Include="Model\Entity\Project.cs" />
-    <Compile Include="Model\Entity\UserEquipment.cs" />
-    <Compile Include="Model\Entity\UserProject.cs" />
-    <Compile Include="Model\ViewModel\UserViewModel.cs" />
+    <Compile Include="Model\Entity\WorkerEquipment.cs" />
+    <Compile Include="Model\Entity\WorkerProject.cs" />
+    <Compile Include="Model\ViewModel\WorkerViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Model\Entity\User.cs" />
+    <Compile Include="Model\Entity\Worker.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
